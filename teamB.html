@@ -1,0 +1,69 @@
+<!DOCTYPE >
+<html>
+    <head> 
+        <meta charset = "UTF-8">
+        <title> Team B </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-image : url("https://wallpaperaccess.com/full/3871478.jpg");
+            }
+            .final-clue-button{
+                display : flex;
+                flex-direction : column;
+                justify-content : center;
+                align-items : center;
+                height : 90vh;
+                font-family: 'Special Elite', cursive;
+            }
+            p{
+                color : white;
+                font-weight : bold;
+                font-size : 50px;
+                margin-top : 50px;
+                
+            }
+            /* Apply a translucent background with a mirror-like effect */
+.btn.btn-outline-secondary {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+  border: 1px solid #ccc; /* Add a border for the button */
+  border-radius: 10px; /* Round the corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Make the font bold */
+.btn.btn-outline-secondary {
+  font-weight: bold;
+  color : white;
+  font-size: 100px;
+}
+
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class = "final-clue-button"> 
+            <button id = "showMessageBtn" class="btn btn-outline-secondary" type="button">Final Clue</button>
+            <p id = "messageDisplay"> </p>
+        </div>
+
+        <script>
+            const button = document.getElementById("showMessageBtn");
+            const messageDisplay = document.getElementById("messageDisplay");
+
+            button.addEventListener("click", () => {
+                const desiredMessage = "Send a message from comms";
+                messageDisplay.textContent = desiredMessage;
+
+            });
+        </script>
+
+    </body>
+</html>
